@@ -1,0 +1,43 @@
+/* Small tables (608px) */
+@media (min-width: 38em) {
+  .hero-img-right,
+  .hero-img-left {
+    width: 160%;
+    margin-bottom: var(--space-900);
+  }
+
+  .section--hero {
+    padding: 0 0 var(--space-1000);
+  }
+
+  .section--hero__title {
+    margin-bottom: var(--space-400);
+  }
+
+  .section--hero__desc {
+    margin-bottom: var(--space-400);
+  }
+
+  .hero-btns {
+    flex-direction: row;
+  }
+
+  .section--features {
+    padding: var(--space-1000) 0 var(--space-1000);
+  }
+
+  .step {
+    margin-bottom: var(--space-600);
+  }
+
+  .section--features__gallery-box {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: var(--space-200);
+    padding: 0 var(--space-300);
+    margin-bottom: var(--space-600);
+  }
+
+  .section--cta {
+    padding-top: var(--space-500);
+  }
+}
