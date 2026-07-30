@@ -1,0 +1,149 @@
+/* RESET Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* DESIGN SYSTEM */
+:root {
+  /* COLORS */
+  --clr-cyan-300: #8fe3f9;
+  --clr-cyan-600: #4d96a9;
+  --clr-purple-300: #d9b8ff;
+  --clr-purple-600: #855fb1;
+  --clr-slate-300: #d1d1df;
+  --clr-slate-600: #87879d;
+  --clr-slate-900: #28283d;
+  --clr-white: #fafafa;
+
+  /* TYPOGRAPHY SCALE (doesn't make sense to implement it here since it hasn't been used) */
+
+  --fw-black: 900;
+  --fw-medium: 500;
+
+  /* SPACING SCALE */
+  --space-50: 0.4rem;
+  --space-100: 0.8rem;
+  --space-200: 1.6rem;
+  --space-300: 2.4rem;
+  --space-400: 3.2rem;
+  --space-500: 4rem;
+  --space-600: 4.8rem;
+  --space-700: 5.6rem;
+  --space-800: 6.4rem;
+  --space-900: 7.2rem;
+  --space-1000: 8rem;
+  --space-1400: 11.2rem;
+}
+
+/* SPECIFIC STYLES */
+html {
+  font-size: 62.5%; /*assuming default font-size of 16px this is 62.5% aka 10px as base for responsive sizing base unit*/
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: var(--fw-medium);
+  color: var(--clr-slate-600);
+  background-color: var(--clr-white);
+  overflow-x: hidden;
+}
+
+header {
+  padding-top: var(--space-600);
+  padding-bottom: var(--space-800);
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  width: 118px;
+  height: 28px;
+}
+
+/* HERO SECTION */
+.hero-img-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--space-600);
+}
+
+.hero-img-left,
+.hero-img-right {
+  text-align: center;
+  width: 70%;
+}
+
+.hero-text-box {
+  text-align: center;
+}
+
+.section--hero__desc {
+  margin-bottom: var(--space-300);
+}
+
+.hero-btns {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+}
+
+/* COMPONENT STYLES */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: var(--fw-black);
+  border: none;
+  padding: var(--space-200) var(--space-400);
+  border-radius: 100rem;
+}
+
+.btn--secondary {
+  background-color: var(--clr-cyan-600);
+}
+
+.btn--primary {
+  background-color: var(--clr-purple-600);
+}
+
+.version {
+  color: var(--clr-cyan-300);
+}
+
+/* UTILITY/HELPER CLASSES */
+.heading-primary,
+.heading-secondary {
+  font-weight: var(--fw-black);
+  color: var(--clr-slate-900);
+  line-height: 1.1;
+}
+
+.heading-primary {
+  font-size: 4rem;
+  margin-bottom: var(--space-300);
+}
+
+.heading-secondary {
+  font-size: 3.2rem;
+}
+
+.container {
+  padding: 0 3.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--col-center {
+  justify-items: center;
+}
