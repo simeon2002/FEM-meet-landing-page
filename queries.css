@@ -1,5 +1,17 @@
 /* Small tables (608px) */
 @media (min-width: 38em) {
+  .heading-primary {
+    font-size: 4.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .subheading {
+    font-size: 1.4rem;
+  }
+
   .hero-img-right img,
   .hero-img-left {
     width: 130%;
@@ -85,6 +97,18 @@
 
 /* Desktop view 1280px */
 @media (min-width: 80em) {
+  .heading-primary {
+    font-size: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 4rem;
+  }
+
+  .subheading {
+    font-size: 1.6rem;
+  }
+
   .section--hero .grid--2-cols {
     grid-template-columns: 1fr 50.7rem 1fr;
     gap: 11.2rem;
