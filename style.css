@@ -35,7 +35,7 @@ header {
 }
 
 .hero-img-left,
-.hero-img-right {
+.hero-img-right img {
   width: 140%;
   margin-bottom: var(--space-600);
 }
@@ -46,11 +46,14 @@ header {
 
 .hero-img-right {
   justify-self: start;
+  max-width: 112rem;
 }
 
-.hero-text-box {
+.section--hero__text-box {
+  max-width: 50.4rem;
   text-align: center;
   grid-column: 1 / -1;
+  align-self: center;
 }
 
 .section--hero__desc {
@@ -60,8 +63,9 @@ header {
 .hero-btns {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: var(--space-200);
-  grid-column: 1 / -1;
 }
 
 /* SECTION FEATURES */
@@ -73,11 +77,11 @@ header {
 .section--features__gallery-box {
   margin-bottom: var(--space-800);
   gap: var(--space-200);
-  padding: 0 3.5rem;
 }
 
 .section--features__text-box {
-  grid-column: 1 / -1;
+  max-width: 50.4rem;
+  margin: 0 auto;
 }
 
 .section--features__gallery-img {
@@ -104,6 +108,10 @@ header {
   background-size: cover;
   background-position: center;
   padding: var(--space-800) 0;
+}
+
+.section--cta__text-container {
+  max-width: 50.4rem;
 }
 
 .section--cta__desc {

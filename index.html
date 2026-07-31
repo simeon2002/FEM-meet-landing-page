@@ -23,38 +23,39 @@
     <main>
       <section class="section--hero">
         <div class="container grid grid--2-cols grid--cols-center">
-          <!-- <div class="hero-img-box-left"> -->
           <img src="assets/desktop/image-hero-left.png" alt="Photos of people faces combined together" class="hero-img-left" />
-          <!-- </div> -->
-          <!-- <div class="hero-img-box-right"> -->
-          <img src="assets/desktop/image-hero-right.png" alt="Photos of people faces combined together" class="hero-img-right" />
-          <!-- </div> -->
-          <div class="hero-text-box">
+          <picture class="hero-img-right">
+            <source srcset="assets/tablet/image-hero.png" media="(min-width: 50em) and (max-width: 80em)" />
+            <source srcset="assets/desktop/image-hero-right.png" />
+            <img src="assets/desktop/image-hero-right.png" alt="Photos of people faces combined together" />
+          </picture>
+          <div class="section--hero__text-box">
             <h1 class="section--hero__title heading-primary">Group Chat for Everyone</h1>
             <p class="section--hero__desc">
               Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
             </p>
-          </div>
-          <div class="hero-btns">
-            <button class="btn--secondary btn">Download <span class="version">v1.3</span></button>
-            <a href="" class="btn--primary btn">What is it?</a>
+            <div class="hero-btns">
+              <button class="btn--secondary btn">Download <span class="version">v1.3</span></button>
+              <a href="" class="btn--primary btn">What is it?</a>
+            </div>
           </div>
         </div>
       </section>
       <section class="section--features">
-        <div class="step">
-          <div class="step__verticle-line"></div>
-          <div class="step__circle">
-            <p class="step__text">01</p>
+        <div class="container">
+          <div class="step">
+            <div class="step__verticle-line"></div>
+            <div class="step__circle">
+              <p class="step__text">01</p>
+            </div>
           </div>
-        </div>
           <div class="section--features__gallery-box grid grid--2-cols">
             <img src="./assets/desktop/image-woman-in-videocall.jpg" alt="" class="section--features__gallery-img" />
             <img src="./assets/desktop/image-women-videochatting.jpg" alt="" class="section--features__gallery-img" />
             <img src="./assets/desktop/image-men-in-meeting.jpg" alt="" class="section--features__gallery-img" />
             <img src="./assets/desktop/image-man-texting.jpg" alt="" class="section--features__gallery-img" />
           </div>
-          <div class="section--features__text-box container grid">
+          <div class="section--features__text-box">
             <p class="subheading">Built for modern use</p>
             <h2 class="section--features_title heading-secondary">Smarter meetings, all in one place</h2>
             <p class="section--features_desc">
@@ -72,7 +73,7 @@
           </div>
         </div>
         <div class="section--cta_text-box">
-          <div class="container grid grid--cols-center">
+          <div class="section--cta__text-container container grid grid--cols-center">
             <h2 class="section--cta__title heading-secondary">Experience more together</h2>
             <p class="section--cta__desc">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
             <button class="btn--secondary btn">Download <span class="version">v1.3</span></button>

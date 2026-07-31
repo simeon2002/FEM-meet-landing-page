@@ -1,8 +1,8 @@
 /* Small tables (608px) */
 @media (min-width: 38em) {
-  .hero-img-right,
+  .hero-img-right img,
   .hero-img-left {
-    width: 160%;
+    width: 130%;
     margin-bottom: var(--space-900);
   }
 
@@ -11,7 +11,7 @@
   }
 
   .section--hero__title {
-    margin-bottom: var(--space-400);
+    margin-bottom: var(--space-300);
   }
 
   .section--hero__desc {
@@ -33,11 +33,104 @@
   .section--features__gallery-box {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: var(--space-200);
-    padding: 0 var(--space-300);
     margin-bottom: var(--space-600);
   }
 
   .section--cta {
     padding-top: var(--space-500);
+  }
+
+  .section--cta_text-box {
+    background-image: linear-gradient(var(--clr-img-overlay), var(--clr-img-overlay)), urL("./assets/tablet/image-footer.jpg");
+  }
+}
+
+/* medium tables 800px */
+@media (min-width: 50em) and (max-width: 80em) {
+  .hero-img-left {
+    display: none;
+  }
+
+  .hero-img-right {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 120%;
+    max-width: 86rem;
+  }
+
+  .hero-img-right img {
+    width: 100%;
+  }
+
+  .section--cta_text-box {
+    background-image: linear-gradient(var(--clr-img-overlay), var(--clr-img-overlay)), urL("./assets/desktop/image-footer.jpg");
+  }
+}
+
+/* larger tablets 1066px */
+@media (min-width: 66em) and (max-width: 80em) {
+  html {
+    font-size: 68.5%;
+  }
+
+  .hero-img-right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img-right img {
+    width: 80%;
+  }
+}
+
+/* Desktop view 1280px */
+@media (min-width: 80em) {
+  .section--hero .grid--2-cols {
+    grid-template-columns: 1fr 50.7rem 1fr;
+    gap: 11.2rem;
+    grid-auto-flow: dense;
+  }
+
+  .section--hero .container {
+    max-width: 144rem;
+  }
+
+  .hero-img-left,
+  .hero-img-right {
+    width: 120%;
+  }
+
+  .hero-img-right img {
+    width: 100%;
+  }
+
+  .hero-img-left {
+    display: block;
+    grid-column: 1;
+  }
+
+  .hero-img-right {
+    grid-column: -2 / -1;
+  }
+
+  .section--hero__text-box {
+    grid-column: 2;
+  }
+
+  .section--cta {
+    text-align: left;
+  }
+
+  .section--cta__text-container {
+    max-width: 112rem;
+    grid-template-columns: 4fr 3fr 2fr;
+    gap: 5.6rem;
+    justify-items: center;
+    align-items: start;
+  }
+
+  .section--cta_text-box {
+    padding: var(--space-1400) 0;
+    background-image: linear-gradient(var(--clr-img-overlay), var(--clr-img-overlay)), urL("./assets/desktop/image-footer.jpg");
   }
 }
