@@ -109,10 +109,19 @@ html {
   border: none;
   padding: var(--space-200) var(--space-400);
   border-radius: 100rem;
+  transition: 0.3s background-color ease-in;
+}
+
+.btn--secondary:hover {
+  background-color: #71c0d4;
 }
 
 .btn--secondary {
   background-color: var(--clr-cyan-600);
+}
+
+.btn--primary:hover {
+  background-color: #b18bdd;
 }
 
 .btn--primary {
