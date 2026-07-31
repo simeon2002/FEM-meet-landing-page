@@ -175,6 +175,10 @@ html {
   justify-items: center;
 }
 
+.grid--rows-center {
+  align-items: center;
+}
+
 .grid--2-cols {
   grid-template-columns: 1fr 1fr;
 }
